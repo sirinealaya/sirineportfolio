@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio" >
+    <title> Sirine Alaya | Mobile & Backend Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sirine<span class="highlight"> Alaya </span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name"> Sirine Alaya</h1>
+                <h2 class="role-text"> <span class="highlight">Software </span> Engineer</h2>
+               
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="assets\certificates\Cv_AlayaSirineIng.pdf" class="btn btn-outline">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-blob"></div>
+                <img src="assets/images/general/profil.jpeg" alt="Profile" class="hero-img">
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a <strong>Computer Engineer </strong> passionte about technology and innovation. 
+                        I am currently seeking an opportunity to apply my skills and 
+                        gain pratical experience. 
+                    </p>
+                    <p>Motivated and adaptable, 
+                        i am eager to learn and contribute to real-world projects with deep expertise in the Android ecosystem.
+                    </p>  
+                    <!--
+                    <div class="tech-badges">
+                        <span class="badge"><i class="fab fa-android"></i> Jetpack Compose</span>
+                        <span class="badge"><i class="fas fa-mobile-alt"></i> KMP</span>
+                        <span class="badge"><i class="fab fa-laravel"></i> Laravel</span>
+                        <span class="badge"><i class="fab fa-php"></i> CodeIgniter</span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Experience Section -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Engineering Degree in Computer Science</h3>
+                        <h4 class="company">Higher Institute of Computer Science and Multimedia of Sfax - ISIMS</h4>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor’s Degree in Computer Science: Data Analysis and Big Data</h3>
+                        <h4 class="company">Higher Institute of Computer Science and Multimedia of Sfax - ISIMS </h4>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>Scientific Baccalaureate – Mathematics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">What <span class="highlight"> i'm doing</span></h2>
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>~ Android ~ Java ~ Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><img src="assets/icone/website.png" alt="web development Icon" style="width:30px; height:30px;"> Web development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 ~ CSS3 ~ JavaScript ~ Angular ~ React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span> ~ PHP ~ Laravel  ~ MySQL ~ SQL ~ REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><img src="assets/icone/ux.png" alt=" data Icon" style="width:30px; height:30px;"> UI / UX Design</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span> ~ Figma ~ Wireframing ~ Prototyping </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><img src="assets/icone/intel.png" alt=" data Icon" style="width:30px; height:30px;"> Data & Business Intelligence</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span> ~ Python ~ SQL ~ Power BI ~ SSIS ~ SSAS ~ Elasticsearch ~ ETL </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><img src="assets/icone/iconevision.png" alt="Computer Vision Icon" style="width:30px; height:30px;"></i> Computer Vision</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span> ~ YOLOv8 ~ IoT ~ Raspberry Pi ~ ESP32 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">February 2025 - June 2025</div>
+                    <div class="timeline-content">
+                        <h3>Final Year Project Internship: Intelligent Traffic Management System</h3>
+                        <h4 class="company">CRNS (Digital Research Center of Sfax)</h4>
+                        <p>Designed an IoT/AI system (Computer Vision with YOLOv8, Raspberry Pi, ESP32) to analyze traffic in real time and optimize traffic light management via a web/mobile interface.
+                        <br/>
+                        <br/><strong> Technologies & Methodologies: AI-IoT, Flutter, Firebase, SCRUM</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">September 2024 – October 2024</div>
+                    <div class="timeline-content">
+                        <h3>PFA Internship</h3>
+                        <h4 class="company"> ACTEOL Sfax </h4>
+                        <p>Designed and implemented a multidimensional database for creating interactive dashboards.
+                        The project included data modeling, ETL processes, and data visualization to support strategic 
+                        decision-making.
+                        <br/>
+                        <br/><strong>Technologies & Methodologies: SSIS, SSAS, Power BI, SQL, SCRUM</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2023 - August 2023</div>
+                    <div class="timeline-content">
+                        <h3>Summer Internship</h3>
+                        <h4 class="company">SwiftCode</h4>
+                        <p>UX/UI Project
+                            <br/>
+                            <br/>
+                            <strong>Tools & Technologies: Figma, Octopus, UXtweak </strong></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">February 2022 – May 2022</div>
+                    <div class="timeline-content">
+                        <h3>Final Year Project Internship</h3>
+                        <h4 class="company"> LEONI Mseken </h4>
+                        <p>Production Data Analysis: Developed a program to 
+                            analyze and visualize patterns of various defects.
+                        <br/>
+                        <br/><strong>Technologies & Methodologies: Python, ReactJS, MySQL, SCRUM</strong></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">October 2021</div>
+                    <div class="timeline-content">
+                        <h3>project-modal-info Internship</h3>
+                        <h4 class="company">IBS Sfax</h4>
+                        <p>Designed and developed a web application for expense management using the Laravel framework and MySQL.
+
+                            <br/>
+                            <br/>
+                            <strong>Technologies & Tools: Laravel 8, MySQL, UML</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Mobile Projects -->
+            
+            <div class="projects-grid">
+                <!-- Project 13 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/trafic.png" alt="Intelligent Traffic Management System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/daboussii/TRAFICA.git"
+                                class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Intelligent Traffic Management System</h3>
+                        <p> The Intelligent Traffic Management System is an innovative solution based on AI and
+IoT, aimed at improving traffic flow and urban safety. It uses embedded systems such as
+Raspberry Pi and ESP32, combined with an intelligent camera. Using the YOLOv8 model, it
+analyzes video streams in real time to detect vehicles, identify anomalies, and perform counting.
+The system dynamically adjusts traffic light cycles and enables synchronized intersection
+management. A web and mobile interface allows users to monitor traffic conditions in real time.</p>
+                        <div class="tags">
+                            <span>IA</span>
+                            <span>IoT</span>
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>SCRUM</span>
+                            <span>YOLOv8</span>
+                            <span>Raspberry Pi</span>
+                            <span>ESP32</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"
+                                class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 12 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/HomeRental.png" alt="Home Rental">
+                        <div class="project-overlay">
+                            <a href="https://drive.google.com/file/d/1KdGHi-s1Q7pqcPYnBQX7795M8RUOIYkq/view?usp=drive_link"
+                            href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Home Rental</h3>
+                        <p>"Home Rental" is a mobile app that helps students find homes for rent easily. 
+                           They can search by location and budget, view photos and details, 
+                           and contact owners directly. The app makes finding student accommodation 
+                           simple and fast.</p>
+                        <div class="tags">
+                            <span>Android</span>
+                            <span>java</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 11 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/BusJet.jpg" alt="BusJet">
+                        <div class="project-overlay">
+                            <a href="https://www.figma.com/proto/SziPzhXu5kb6sXAlNdH1d6/Figma-mobile-design?node-id=1-135&p=f&t=UWH5v5qAejvR8OID-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A135&show-proto-sidebar=1"
+                                class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>BusJet</h3>
+                        <p>Notre application "BusJet" offre aux utilisateurs la
+                        possibilité de suivre les bus en temps réel sur une carte
+                        interactive, d'accéder aux horaires de passage, d'être 
+                        informé des éventuels retards et des perturbations du service.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>UX/UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+<!--
+                /!\ Project 10 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/daily-market.png" alt="Daily market ISS">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Daily market ISS</h3>
+                        <p>A B2B ordering application streamlining product procurement for outlets from PT Inti Sukses
+                            Sumatera distributors.</p>
+                        <div class="tags">
+                            <span>Kotlin</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 9 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/iss-ds.png" alt="ISS : Distribution System">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ISS : Distribution System</h3>
+                        <p>A comprehensive sales distribution system empowering sales representatives at PT Inti Sukses
+                            Sumatera to manage orders and inventory efficiently.</p>
+                        <div class="tags">
+                            <span>Kotlin</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 8 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/ayohijrah.png" alt="Ayohijrah">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ayo Hijrah</h3>
+                        <p>A dedicated e-commerce platform designed for Ayo Hijrah, facilitating the retail of Muslim
+                            fashion with a seamless shopping experience.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Rajaongkir API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </article>
+                /!\ Project 7 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/absensi.png" alt="Absensi App">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Absensi Mobile</h3>
+                        <p>An efficient employee attendance application featuring real-time location tracking and
+                            automated data recapitulation for precise workforce management.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 6 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/diata.png" alt="Diata">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Diata : Point of Sale</h3>
+                        <p>A mobile Point of Sale (POS) solution enabling business owners to manage transactions and
+                            inventory directly from their smartphones.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Firebase Cloud Messaging</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\Project 5 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/bpcb.png" alt="BPBC">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>BPCB Sumbar</h3>
+                        <p>A cultural heritage information app utilizing QR codes to provide instant access to
+                            historical data on protected sites in West Sumatra.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>QR Code</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 4 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/alumniubh.png" alt="Alumni UBH">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Alumni Hukum UBH</h3>
+                        <p>The official alumni networking application for the Faculty of Law at Bung Hatta University,
+                            fostering community and professional connections.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 3
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/pinzy.png" alt="Pinzy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pinzy</h3>
+                        <p>A specialized B2B e-commerce platform for smartphone accessory transactions, serving
+                            distributors across West Sumatra and Bengkulu.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\Project 2 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/mediatama.png" alt="Mediatama">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mediatama Apps</h3>
+                        <p>A scheduling and consultation booking application connecting clients with educational
+                            consultants at CV Mediatama Web Indonesia.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 1 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile/padangkos.png" alt="PadangKos">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PadangKos</h3>
+                        <p>A boarding house marketplace in Padang City, connecting tenants with property owners through
+                            an intuitive search and promotion platform.</p>
+                        <div class="tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Rest API</span>
+                            <span>Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                -->
+                </article>
+            </div>
+<!--
+            <div class="project-spacer"></div>
+
+            /!\ Web Projects 
+            <h3 class="subsection-title"><i class="fas fa-laptop-code"></i>Desktop & Web Development</h3>
+            <div class="projects-grid">
+                /!\Project 2 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/web/desktop-intiabsensi.png" alt="Inti Absensi Desktop">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inti Absensi Desktop</h3>
+                        <p>A desktop-based employee attendance system leveraging facial recognition technology for
+                            secure and accurate time tracking at PT. Inti Sukses Sumatera.</p>
+                        <div class="tags">
+                            <span>Compose Multiplatform</span>
+                            <span>MySQL</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                /!\ Project 1 
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/web/web-iss.png" alt="Web Admin ISS">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Admin ISS Distribution System</h3>
+                        <p>A web admin system for managing distribution of goods at PT. Inti Sukses Sumatera.</p>
+                        <div class="tags">
+                            <span>CodeIgniter</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-text">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    -->
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates-grid">
+                <div class="cert-card" onclick="openModal('assets/certificates/certpython.png', 'Introduction to Programming with Python')">
+                    <img src="assets/certificates/certpython.png" alt="Introduction to Programming with Python">
+                    <div class="cert-info">
+                        <h3>MTA: Introduction to Programming with Python</h3>
+                        <p>Microsoft • 2021</p>
+                    </div>
+                </div>
+                <!-- Duplicate for demo -->
+                <div class="cert-card" onclick="openModal('assets/certificates/certif2021.png', 'Certificate of Participation in NMTC')">
+                    <img src="assets/certificates/certif2021.png" alt="Certificate of Participation in NMTC">
+                    <div class="cert-info">
+                        <h3>Certificate of Participation in NMTC</h3>
+                        <p>MTC.ISIMS • 2021</p>
+                    </div>
+                </div>
+
+                <div  class="cert-card" onclick="openModal('assets/certificates/cert2020.jpg', 'Coding Mania')">
+                    <img src="assets/certificates/cert2020.jpg" alt="Coding Mania">
+                    <div class="cert-info">
+                        <h3>Certificate of Participation in the Coding Mania Challenge</h3>
+                        <p>MTC.ISIMS • 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-card email-card" onclick="copyToClipboard('sirinealaya236@gmail.com')">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p id="email-text">sirinealaya236@gmail.com</p>
+                    <span class="copy-hint">Click to copy</span>
+                </div>
+                <a href="https://wa.me/+21626397431" target="_blank" class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with me</p>
+                </a>
+                <a href="https://github.com/sirinealaya" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Check my code</p>
+                </a>
+                <a href="https://www.linkedin.com/in/sirine-alaya-b967b5222/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sirine Alaya. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <span class="close-modal project-close">&times;</span>
+        <div class="modal-content project-modal-content">
+            <img id="projectModalImage" class="project-modal-img" src="" alt="">
+            <div class="project-modal-info">
+                <h3 id="projectModalTitle"></h3>
+                <p id="projectModalDescription"></p>
+                <div id="projectModalTags" class="tags"></div>
+                <div id="projectModalLinks" class="project-links"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Certificates -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
